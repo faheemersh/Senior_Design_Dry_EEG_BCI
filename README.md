@@ -1,1 +1,1 @@
-# Senior_Design_EEG_fNIRS_BCI
+# Senior_Design_Dry_EEG_BCI
