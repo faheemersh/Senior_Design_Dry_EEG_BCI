@@ -1,1 +1,1 @@
-# Senior_Design_Dry_EEG_BCI
+# This branch contains almost all of the data recorded using the OpenBCI Ultracortex Mark III Nova.
