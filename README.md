@@ -1,2 +1,2 @@
-### This folder includes the required files to successfully stream data into MATLAB directly from the serial port, though with some caveats.
+### This folder includes the files that need to be run in a separate instance of MATLAB before the online training session and prediction code is run.
 
