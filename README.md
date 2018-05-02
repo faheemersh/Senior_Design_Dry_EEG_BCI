@@ -1,2 +1,1 @@
-### This folder includes the required files to successfully stream data into MATLAB directly from the serial port, though with some caveats.
-
+### Please see the Wiki page of this repo.
