@@ -1,1 +1,1 @@
-### Please see the Wiki page of this repo.
+### Edit this description to include our setup of OpenViBE.
