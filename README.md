@@ -31,7 +31,6 @@ Note: steps 1-12 of this section copied/modified from this link on OpenBCI in ca
 
 6.	We recommend you leave the Hub running, even when not using the OpenBCI_GUI, the hub’s impact on performance when not in use is minimal.
 
-
 7.	Verify the hub is running in your windows tool tray.
 <a href="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i"><img src="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
