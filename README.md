@@ -14,8 +14,7 @@
 Note: steps 1-12 of this section copied/modified from this link on OpenBCI in case the link is changed/removed.
 
 1. First unzip the windows application you downloaded from the downloads section of the OpenBCI Website.
-
-<a href="https://drive.google.com/uc?export=view&id=1VaGLtKgmv52oyLSYWz8DjYxAMVVyIB2k"><img src="https://drive.google.com/uc?export=view&id=1VaGLtKgmv52oyLSYWz8DjYxAMVVyIB2k" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=1VaGLtKgmv52oyLSYWz8DjYxAMVVyIB2k"><img src="https://drive.google.com/uc?export=view&id=1VaGLtKgmv52oyLSYWz8DjYxAMVVyIB2k" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 2.	Please place the OpenBCIHub in your Program Files directory such that the structure looks like: “\Program Files\OpenBCIHub\OpenBCIHub.exe”
 
