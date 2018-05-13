@@ -4,13 +4,13 @@
 - Processing-3.3.6-windows64 (from their website)
 - OpenBCI GUI (from their website)
 
-### The guides below will direct you on how to:
+# The guides below will direct you on how to:
 1. Setup the standalone OpenBCI Hub and GUI
 2. Run the standalone OpenBCI GUI
 3. Run OpenBCI GUI using Processing (if the standalone is buggy)
 4. Setup and run EEGLAB/BCILAB(devel)
 
-### Setting up OpenBCI GUI with Cyton 32-bit 8 chan. (Windows 10)
+# Setting up OpenBCI GUI with Cyton 32-bit 8 chan. (Windows 10)
 
 ## Setting up OpenBCI Hub and OpenBCI GUI
 Note: steps 1-12 of this section copied/modified from this link on OpenBCI in case the link is changed/removed.
@@ -32,7 +32,7 @@ Note: steps 1-12 of this section copied/modified from this link on OpenBCI in ca
 6.	We recommend you leave the Hub running, even when not using the OpenBCI_GUI, the hub’s impact on performance when not in use is minimal.
 
 7.	Verify the hub is running in your windows tool tray.
-<a href="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i"><img src="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
+<br><a href="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i"><img src="https://drive.google.com/uc?export=view&id=1yW1_kodVP567mB2rJlaKPHZ4WNMDri0i" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
 8.	To quit the hub, click the OpenBCI icon, and then press the quit button.
 <a href="https://drive.google.com/uc?export=view&id=1_-HE-upGTgHgOx6vybWClIdkaqa_JuDa"><img src="https://drive.google.com/uc?export=view&id=1_-HE-upGTgHgOx6vybWClIdkaqa_JuDa" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
