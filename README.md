@@ -13,7 +13,7 @@
 # Setting up OpenBCI GUI with Cyton 32-bit 8 chan. (Windows 10)
 
 ## Setting up OpenBCI Hub and OpenBCI GUI
-Note: steps 1-12 of this section copied/modified from [this link] (http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-installing-the-openbci-gui-as-a-standalone-application-install-openbci_gui-on-windows) on OpenBCI in case the link is changed/removed.
+Note: steps 1-12 of this section copied/modified from <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-installing-the-openbci-gui-as-a-standalone-application-install-openbci_gui-on-windows">this link</a> on OpenBCI in case the link is changed/removed.
 
 1. First unzip the windows application you downloaded from the downloads section of the OpenBCI Website.
 <br><a href="https://drive.google.com/uc?export=view&id=19oMzQylRu5RJdJdSCaCmvs9G-VCvM3dr"><img src="https://drive.google.com/uc?export=view&id=19oMzQylRu5RJdJdSCaCmvs9G-VCvM3dr" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
