@@ -10,9 +10,7 @@
 3. Run OpenBCI GUI using Processing (if the standalone is buggy)
 4. Setup and run EEGLAB/BCILAB(devel)
 
-# Setting up OpenBCI GUI with Cyton 32-bit 8 chan. (Windows 10)
-
-## Setting up OpenBCI Hub and OpenBCI GUI
+## Setup the standaline OpenBCI Hub and OpenBCI GUI (Windows 10)
 Note: steps 1-12 of this section copied/modified from <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-installing-the-openbci-gui-as-a-standalone-application-install-openbci_gui-on-windows">this link</a> on OpenBCI in case the link is changed/removed.
 
 1. First unzip the windows application you downloaded from the downloads section of the OpenBCI Website.
@@ -46,3 +44,28 @@ Note: steps 1-12 of this section copied/modified from <a href="http://docs.openb
 
 12.	Lastly, right click on the executable -> properties -> compatibility -> tick “Run this program as an administrator”.
 <br><a href="https://drive.google.com/uc?export=view&id=1aA38drhH1MQUsPRBBfzfjTNtLhnRjjdm"><img src="https://drive.google.com/uc?export=view&id=1aA38drhH1MQUsPRBBfzfjTNtLhnRjjdm" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+## Run the standalone OpenBCI GUI
+1. Download the appropriate <a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI drivers</a> for your computer.
+
+2. Make sure the OpenBCI Hub is running. Then go to your installation directory for OpenBCI GUI and run it. It should be in your program files folder or you can use the shortcut on your desktop.
+
+3. Plug in the dongle and turn on the Cyton board. Make sure the pin on the dongle is set to 'GPIO6' and NOT 'RESET' and that the blue LED is on. 
+<br><a href="https://drive.google.com/uc?export=view&id=1cZ2AFED9Q9nVVS_9jJ7q5fs9NBzmZL1C"><img src="https://drive.google.com/uc?export=view&id=1cZ2AFED9Q9nVVS_9jJ7q5fs9NBzmZL1C" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+4. Once it opens, make sure to choose ‘LIVE (from Cyton)-->Serial (from Dongle)-->Port (for us it was COM13)-->Start system. You can change other parameters if you want. 
+
+5. If the connection between the board, dongle, and computer is successful, then you will see the following screen.
+<br><a href="https://drive.google.com/uc?export=view&id=1H_p0pTethGnjIUdI1fvttINh6Taz5PyW"><img src="https://drive.google.com/uc?export=view&id=1H_p0pTethGnjIUdI1fvttINh6Taz5PyW" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+6. Click Start Data Stream. Note that as soon as you do this, the data will record to a text file in the SavedData folder within the OpenBCI GUI folder in your program files. See a figure for the streaming data below.
+<br><a href="https://drive.google.com/uc?export=view&id=1QMY6b66YodTNpkxHgxpqBb3JIivt7ytz"><img src="https://drive.google.com/uc?export=view&id=1QMY6b66YodTNpkxHgxpqBb3JIivt7ytz" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+7. You can turn off channels by clicking on their numbers in the time series widget. By using the dropdown menus, you can view other kinds of data available from the Cyton board.
+
+8. Click ‘Stop Data Stream’ to stop streaming. 
+
+## Run OpenBCI GUI using Processing
+Note: Please use the first set of instructions to install the OpenBCI Hub first.
+
+
