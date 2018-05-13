@@ -1,8 +1,8 @@
 ### This branch includes some of the archives and executables used in this project.
 ### Other important .exe and .zip files that couldn't be uploaded (can download from other places)
-- BCILAB-devel (from their Github repo)
-- Processing-3.3.6-windows64 (from their website)
-- OpenBCI GUI (from their website)
+- BCILAB-devel (download/clone from their <a href="https://github.com/sccn/BCILAB/tree/devel">Github repo</a>)
+- Processing-3.3.6-windows64 (from their <a href="https://processing.org/download/">website</a>)
+- OpenBCI GUI (from their <a href="http://openbci.com/donation">website</a>)
 
 # The guides below will direct you on how to:
 1. Setup the standalone OpenBCI Hub and GUI
@@ -66,6 +66,8 @@ Note: steps 1-12 of this section copied/modified from <a href="http://docs.openb
 8. Click ‘Stop Data Stream’ to stop streaming. 
 
 ## Run OpenBCI GUI using Processing
-Note: Please use the first set of instructions to install the OpenBCI Hub first.
+Note: Please use the first set of instructions to install the OpenBCI Hub first. These instructions will be added into this README in the future. For now, please follow the <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci-gui-from-the-processing-ide">OpenBCI link</a>.
+
+## Setup and run EEGLAB/BCILAB(devel)
 
 
