@@ -8,7 +8,7 @@
 1. Setup the standalone OpenBCI Hub and GUI
 2. Run the standalone OpenBCI GUI
 3. Run OpenBCI GUI using Processing (if the standalone is buggy)
-4. Setup and run EEGLAB/BCILAB(devel)
+
 
 ## Setup the standaline OpenBCI Hub and OpenBCI GUI (Windows 10)
 Note: steps 1-12 of this section copied/modified from <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-installing-the-openbci-gui-as-a-standalone-application-install-openbci_gui-on-windows">this link</a> on OpenBCI in case the link is changed/removed.
@@ -46,7 +46,7 @@ Note: steps 1-12 of this section copied/modified from <a href="http://docs.openb
 <br><a href="https://drive.google.com/uc?export=view&id=1aA38drhH1MQUsPRBBfzfjTNtLhnRjjdm"><img src="https://drive.google.com/uc?export=view&id=1aA38drhH1MQUsPRBBfzfjTNtLhnRjjdm" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
 ## Run the standalone OpenBCI GUI
-1. Download the appropriate <a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI drivers</a> for your computer.
+1. Download the appropriate <a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI drivers</a> for your computer. Install the drivers prior to moving on to the next steps.
 
 2. Make sure the OpenBCI Hub is running. Then go to your installation directory for OpenBCI GUI and run it. It should be in your program files folder or you can use the shortcut on your desktop.
 
@@ -67,7 +67,5 @@ Note: steps 1-12 of this section copied/modified from <a href="http://docs.openb
 
 ## Run OpenBCI GUI using Processing
 Note: Please use the first set of instructions to install the OpenBCI Hub first. These instructions will be added into this README in the future. For now, please follow the <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci-gui-from-the-processing-ide">OpenBCI link</a>.
-
-## Setup and run EEGLAB/BCILAB(devel)
 
 
