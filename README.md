@@ -53,17 +53,25 @@ Note: steps 1-12 of this section copied/modified from <a href="http://docs.openb
 3. Plug in the dongle and turn on the Cyton board. Make sure the pin on the dongle is set to 'GPIO6' and NOT 'RESET' and that the blue LED is on. 
 <br><a href="https://drive.google.com/uc?export=view&id=1cZ2AFED9Q9nVVS_9jJ7q5fs9NBzmZL1C"><img src="https://drive.google.com/uc?export=view&id=1cZ2AFED9Q9nVVS_9jJ7q5fs9NBzmZL1C" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
-4. Once it opens, make sure to choose ‘LIVE (from Cyton)-->Serial (from Dongle)-->Port (for us it was COM13)-->Start system. You can change other parameters if you want. 
+4. Fix the latency settings which can be found at <a href="http://docs.openbci.com/Tutorials/11-OpenBCI_on_Windows#openbci-on-windows-ftdi-drivers-ii-latency-settings-fix">this link</a>, or by following the next couple of steps.
 
-5. If the connection between the board, dongle, and computer is successful, then you will see the following screen.
+5. Open Device Manager by going to the Control Panel, then Hardware, and then Device Manager. Alternatively, just right click on the start button and choose Device Manager. Click on ports. The dongle should show up as a COM port (for us it was COM13). Right click it and go to properties.
+<br><a href="https://drive.google.com/uc?export=view&id=141s8hDAzLR-RbWdFvR1S902Z74F9OefQ"><img src="https://drive.google.com/uc?export=view&id=141s8hDAzLR-RbWdFvR1S902Z74F9OefQ" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+6. Go to the Port Settings tab and click on advanced. Choose 1 msec for the latency timer. Click ok, then click ok again. This should make the data transfer from the board to the dongle more consistent and fluid.
+<br><a href="https://drive.google.com/uc?export=view&id=13jWhb7C-IPVilXpxQFC2kjoyn94dq61g"><img src="https://drive.google.com/uc?export=view&id=13jWhb7C-IPVilXpxQFC2kjoyn94dq61g" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+7. Once the GUI opens, make sure to choose ‘LIVE (from Cyton)-->Serial (from Dongle)-->Port (for us it was COM13)-->Start system. You can change other parameters if you want. 
+
+8. If the connection between the board, dongle, and computer is successful, then you will see the following screen.
 <br><a href="https://drive.google.com/uc?export=view&id=1H_p0pTethGnjIUdI1fvttINh6Taz5PyW"><img src="https://drive.google.com/uc?export=view&id=1H_p0pTethGnjIUdI1fvttINh6Taz5PyW" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
-6. Click Start Data Stream. Note that as soon as you do this, the data will record to a text file in the SavedData folder within the OpenBCI GUI folder in your program files. See a figure for the streaming data below.
+9. Click Start Data Stream. Note that as soon as you do this, the data will record to a text file in the SavedData folder within the OpenBCI GUI folder in your program files. See a figure for the streaming data below.
 <br><a href="https://drive.google.com/uc?export=view&id=1QMY6b66YodTNpkxHgxpqBb3JIivt7ytz"><img src="https://drive.google.com/uc?export=view&id=1QMY6b66YodTNpkxHgxpqBb3JIivt7ytz" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
-7. You can turn off channels by clicking on their numbers in the time series widget. By using the dropdown menus, you can view other kinds of data available from the Cyton board.
+10. You can turn off channels by clicking on their numbers in the time series widget. By using the dropdown menus, you can view other kinds of data available from the Cyton board.
 
-8. Click ‘Stop Data Stream’ to stop streaming. 
+11. Click ‘Stop Data Stream’ to stop streaming. 
 
 ## Run OpenBCI GUI using Processing
 Note: Please use the first set of instructions to install the OpenBCI Hub first. These instructions will be added into this README in the future. For now, please follow the <a href="http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci-gui-from-the-processing-ide">OpenBCI link</a>.
