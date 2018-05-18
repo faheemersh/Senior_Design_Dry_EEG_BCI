@@ -3,6 +3,25 @@
 # External Triggering with OpenBCI
 1.	First obtain an optoisolator as shown on <a href="https://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d">OpenBCI’s website</a>.
 2.	Setup the optoisolator as shown below (taken from OpenBCI’s external triggering page):
+<br><a href="https://drive.google.com/uc?export=view&id=13AI0PjNmBja_kta2vWr4naFGDcOafNhF"><img src="https://drive.google.com/uc?export=view&id=13AI0PjNmBja_kta2vWr4naFGDcOafNhF" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+3.	The overall setup should look like the following, where a parallel port is attached to a computer containing the paradigm/stimulation software. Plug in the dongle to your computer and then turn on the cyton board. Afterwards, connect the wires from the breadboard to the cyton.
+<br><a href="https://drive.google.com/uc?export=view&id=1Kb0uQz9Tf_uihwE0nc8yjW192d4pIIDS"><img src="https://drive.google.com/uc?export=view&id=1Kb0uQz9Tf_uihwE0nc8yjW192d4pIIDS" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+4.	Then open the paradigm software. For our case, we used a VEP paradigm in E-Prime 3 with the following settings: 1st checkerboard starts sending signal at 0 ms (no delay), then stops sending signal after 500 ms, then 2nd checkerboard is 0 delay, and doesn’t send any signal at all.
+5.	Open the OpenBCI GUI if you have not already. Provide the file name and start the system. Then change one of the widgets to digital inputs. Start the paradigm in E-Prime and start recording with the GUI. If done correctly, the corresponding marker on the GUI will switch between 0 and 1. 
+6.	A video of a successful setup is shown <a href="https://drive.google.com/file/d/1AwBl_wfWkg1qUssZFW3Z43wBrjn_uNb-/view">here</a>. If you open the text file produced from the recording, there will now be 5 columns, each representing a digital input in, after the eight EEG channels. Find the column containing D17 markers (should be in the 4th column of these 5 columns) and use it for analysis, which is done in the next section. 
 
-
-
+# Analysis for VEP
+## EEGLAB with OpenBCI GUI data
+1.	Add EEGLAB’s path via command window. Ex: <i>addpath('C://Users//fahee//Downloads//Capstone downloads//eeglab_current//eeglab14_1_1b')</i>
+2. Open the file save_file_view.m (VEP folder in this branch) in MATLAB. This is the script that extracts the important information from the text file produced by the OpenBCI GUI after recording. Make sure that the text file of interest is in the current path. Copy in the name of the file of interest to the code. 
+<br><a href="https://drive.google.com/uc?export=view&id=1QUpLK3PB5uWzJvGcolFFW4VEiXgFB06v"><img src="https://drive.google.com/uc?export=view&id=1QUpLK3PB5uWzJvGcolFFW4VEiXgFB06v" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+3.	Make sure to alter the highlighted line to the file name of the text file. This is the input EEG data to EEGLAB. 
+<br><a href="https://drive.google.com/uc?export=view&id=1oMCSOrrhkuwFMnnenW0OVfQ-98jKyFfL"><img src="https://drive.google.com/uc?export=view&id=1oMCSOrrhkuwFMnnenW0OVfQ-98jKyFfL" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+4.	Run the file. Make sure to go the end of the file and follow the steps, which are also shown below. This is to ensure the marker file is saved in the format that EEGLAB can read. 
+<br><a href="https://drive.google.com/uc?export=view&id=1G7CjXTERZ-8Wzs4CzrMvCLHvvpZ1Kx1r"><img src="https://drive.google.com/uc?export=view&id=1G7CjXTERZ-8Wzs4CzrMvCLHvvpZ1Kx1r" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+5.	Open the excel file in excel and go to save as. Choose the option shown below and save in the correct directory.
+<br><a href="https://drive.google.com/uc?export=view&id=1XFUfsSyY6_j44VqbLJTYkCmFUPswT0OM"><img src="https://drive.google.com/uc?export=view&id=1XFUfsSyY6_j44VqbLJTYkCmFUPswT0OM" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+6.	Type <i>eeglab</i> in the command window. Then go to file->import data->Using EEGLAB functions and plugins->From ASCII/float file or Matlab array.
+<br><a href="https://drive.google.com/uc?export=view&id=1I1P5wXhbJ7hVVtSoO7InFRNGczJ47BeY"><img src="https://drive.google.com/uc?export=view&id=1I1P5wXhbJ7hVVtSoO7InFRNGczJ47BeY" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+7.	Fill in the fields as shown, making sure to select Matlab .mat file from the dropdown and browsing for the EEG data file you saved while doing this procedure. Then under the Channel Location file or info, choose the correct .ced file containing the locations of your EEG channels. The details on creating the channel locations file can be found in the following subsection (Channel Locations File). 
+<br><a href="https://drive.google.com/uc?export=view&id=1LF1cvB-3srQ74W6Mm86f9JJblydwTaiD"><img src="https://drive.google.com/uc?export=view&id=1LF1cvB-3srQ74W6Mm86f9JJblydwTaiD" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
