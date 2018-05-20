@@ -30,6 +30,6 @@
 9.	Browse for the event markers file that you saved as a text file (from the excel file earlier). Fill out the parameters as shown below. Press ok.
 <br><a href="https://drive.google.com/uc?export=view&id=1kxDW-3JkYujmKP3V6ZJDb7FWui3JRpip"><img src="https://drive.google.com/uc?export=view&id=1kxDW-3JkYujmKP3V6ZJDb7FWui3JRpip" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 10.	Go to Tools->Extract epochs. Enter/select the following parameters in the popup. Press ok and then ok for all following pop ups (including baseline removal). The main EEGLAB window should look like the figure to the right.
-<br><a href="https://drive.google.com/uc?export=view&id=1d8m4b-fLiJ3Ye6-bRLvQwZCwH-raUcZo"><img src="https://drive.google.com/uc?export=view&id=1d8m4b-fLiJ3Ye6-bRLvQwZCwH-raUcZo" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
-<a href="https://drive.google.com/uc?export=view&id=1IqkbQVb-4MBhHNMlJnKU6kBn2_6r0J1z"><img src="https://drive.google.com/uc?export=view&id=1IqkbQVb-4MBhHNMlJnKU6kBn2_6r0J1z" style="max-width: 100%; height: auto" title="Click for the larger version." /></a>
+<br><a href="https://drive.google.com/uc?export=view&id=1d8m4b-fLiJ3Ye6-bRLvQwZCwH-raUcZo"><img src="https://drive.google.com/uc?export=view&id=1d8m4b-fLiJ3Ye6-bRLvQwZCwH-raUcZo" style="width:200px max-width: 100%; height: auto" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=1IqkbQVb-4MBhHNMlJnKU6kBn2_6r0J1z"><img src="https://drive.google.com/uc?export=view&id=1IqkbQVb-4MBhHNMlJnKU6kBn2_6r0J1z" style="width:200px max-width: 100%; height: auto" title="Click for the larger version." /></a>
 </br>
