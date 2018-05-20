@@ -1,1 +1,1 @@
-### Please see the Wiki page of this repo.
+### Prior to creating the online code, we first recorded data using OpenViBE's Motor Imagery Scenarios and processed the data in MATLAB using the code in this branch. The guide below shows how we recorded data and used it in MATLAB.
