@@ -41,3 +41,18 @@
 14. Next, visualize the data by going to Plot->Channel Data (scroll).
 <br><a href="https://drive.google.com/uc?export=view&id=1G1_HHPvNoawNUqdnZSL8kqqE4yjL07mW"><img src="https://drive.google.com/uc?export=view&id=1G1_HHPvNoawNUqdnZSL8kqqE4yjL07mW" style="width:200px; height: auto" title="Click for the larger version." /></a>
 </br>
+15. Click on sections of the data (will become yellow) that you do not want to keep. Then click reject and ok on the following pop up. You can also use ICA to remove artifacts (https://www.youtube.com/watch?list=PLn0OLiymPak2gDD-VDA90w9_iGDgOOb2o&v=AKCK7DXa0gY).
+16. Finally, to see the VEP in channels O1 and O2, go to Plot->Channel ERPs->In scalp/rect. Array. Click ok on the pop up. Click on O1 or O2 to see VEP. Example is shown below, just for one of the channels. You can also see other options via the Plot menu in the toolbar, such as head plots and other cool stuff. You may notice that there is an artifact at the onset of the checkerboard switching. This is a VEP that specifically has a positive/negative deflection at around 100 ms after the onset of the checkerboard switch. For P300, you might expect to see a similar waveform at around 300 ms after the onset of the event.
+<br><a href="https://drive.google.com/uc?export=view&id=1QEjMGH7fNrfHKYw7d1SnPdO6cxU3OL_p"><img src="https://drive.google.com/uc?export=view&id=1QEjMGH7fNrfHKYw7d1SnPdO6cxU3OL_p" style="width:200px; height: auto" title="Click for the larger version." /></a>
+</br>
+### Channel Locations File
+1.	Go to the EEGLAB directory on your computer, then navigate to the folder samplelocs and open the Standard-10-20-Cap81.ced file using Notepad++ (Windows). Note that this a sample file provided by EEGLAB.
+<br><a href="https://drive.google.com/uc?export=view&id=14yk0iML88F22FJCdhtLT0xtP6eS01sIv"><img src="https://drive.google.com/uc?export=view&id=14yk0iML88F22FJCdhtLT0xtP6eS01sIv" style="width:200px; height: auto" title="Click for the larger version." /></a>
+</br>
+2.	Copy the first row (header) into a new file on Notepad++. Then go back into the sample file and copy the ENTIRE row of whatever channels you use into the new file you’ve created. Be careful to not mess with ANY of the spacing and only renumber after you’ve copied all your rows into the new file. Left screenshot shows the sample file, right shows an example of a new file that you may have created.
+<br><a href="https://drive.google.com/uc?export=view&id=1rCRSUUQnu6bCWa7p7udOvlGZfWoPh-H4"><img src="https://drive.google.com/uc?export=view&id=1rCRSUUQnu6bCWa7p7udOvlGZfWoPh-H4" style="width:200px; height: auto" title="Click for the larger version." /></a>
+</br>
+3.	The screenshot below shows an example of a new file that you may have created. Electrodes 3-7 show the ones we actually used. Comfort inserts were place at the other locations shown in the file and elsewhere on the headset for added support.
+<br><a href="https://drive.google.com/uc?export=view&id=1OPC90e_JeDMY3xH7LB6mmAwvvxwwqpBu"><img src="https://drive.google.com/uc?export=view&id=1OPC90e_JeDMY3xH7LB6mmAwvvxwwqpBu" style="width:200px; height: auto" title="Click for the larger version." /></a>
+</br>
+4.	Make sure to save the new file in the correct directory as a .ced file.
