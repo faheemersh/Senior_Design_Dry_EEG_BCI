@@ -54,7 +54,7 @@
 2.	Copy the first row (header) into a new file on Notepad++. Then go back into the sample file and copy the ENTIRE row of whatever channels you use into the new file you’ve created. Be careful to not mess with ANY of the spacing and only renumber after you’ve copied all your rows into the new file. Left screenshot shows the sample file, right shows an example of a new file that you may have created.
 <br><a href="https://drive.google.com/uc?export=view&id=1rCRSUUQnu6bCWa7p7udOvlGZfWoPh-H4"><img src="https://drive.google.com/uc?export=view&id=1rCRSUUQnu6bCWa7p7udOvlGZfWoPh-H4" style="width:200px; height: auto" title="Click for the larger version." /></a>
 </br>
-3.	The screenshot below shows an example of a new file that you may have created. Electrodes 3-7 show the ones we actually used. Comfort inserts were place at the other locations shown in the file and elsewhere on the headset for added support.
+3.	The screenshot below shows an example of a new file that you may have created. This is the electrode setup we used for VEP.
 <br><a href="https://drive.google.com/uc?export=view&id=1OPC90e_JeDMY3xH7LB6mmAwvvxwwqpBu"><img src="https://drive.google.com/uc?export=view&id=1OPC90e_JeDMY3xH7LB6mmAwvvxwwqpBu" style="width:200px; height: auto" title="Click for the larger version." /></a>
 </br>
 4.	Make sure to save the new file in the correct directory as a .ced file.
