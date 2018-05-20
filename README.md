@@ -14,8 +14,8 @@ For synchronous BCIs, there may be a need to stream markers in real-time to anot
 5. Go back to OpenViBE and play the scenario. Go to MATLAB and run ReceiveData.m. You should now see a stream of data coming into MATLAB. After 30 seconds, the Graz stimulations will begin, and you will see the marker IDs show up in the next to last column (right-most) in the MATLAB command window. Marker ID 800 can be seen in the screenshot on the right.
 <br><a href="https://drive.google.com/uc?export=view&id=1SKhJZcaF8Et1y5lssR5Zs7-IT5I6W5Vn"><img src="https://drive.google.com/uc?export=view&id=1SKhJZcaF8Et1y5lssR5Zs7-IT5I6W5Vn" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 6. The key for the marker IDs and their corresponding events are shown below. These were found by exploring the scenario .xml and related files with Notepad++.
-<br>Experiment start: 32768</br>
-<br>Baseline start: 32775</br>
+* Experiment start: 32768</br>
+* Baseline start: 32775</br>
 <br>Beep: 33282</br>
 <br>Baseline stop: 32776</br>
 <br>Start trial: 768</br>
