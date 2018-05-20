@@ -38,3 +38,6 @@
 </br>
 13. notch filters.
 <br><a href="https://drive.google.com/uc?export=view&id=15yRYguZEH-XVSKCpwFpX-n6tHjC-4hc3"><img src="https://drive.google.com/uc?export=view&id=15yRYguZEH-XVSKCpwFpX-n6tHjC-4hc3" style="width:200px; height: auto" title="Click for the larger version." /></a></br>
+14. Next, visualize the data by going to Plot->Channel Data (scroll).
+<br><a href="https://drive.google.com/uc?export=view&id=1G1_HHPvNoawNUqdnZSL8kqqE4yjL07mW"><img src="https://drive.google.com/uc?export=view&id=1G1_HHPvNoawNUqdnZSL8kqqE4yjL07mW" style="width:200px; height: auto" title="Click for the larger version." /></a>
+</br>
