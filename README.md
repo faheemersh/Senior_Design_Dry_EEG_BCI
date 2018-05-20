@@ -5,7 +5,7 @@ Note: due to time constraints and our knowledge of MATLAB, these guides are only
 
 ### Setup LSL
 1. Setup LSL using Python
-2. LSL through OpenBCI GUI
+2. LSL through OpenBCI GUI (recommended)
 ### Receive Data in MATLAB
 3. Receive data in MATLAB with ReceiveData.m via LSL, LSL MATLAB example
 4. Receive data in MATLAB with vis_stream.m via LSL, LSL MATLAB viewer
