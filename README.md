@@ -1,7 +1,7 @@
 ### The guide below shows how we used an external trigger with the Cyton 32-bit board. We attempted to observe a visually evoked potential (VEP) as a way to validate the performance of our system.
 
 # External Triggering with OpenBCI
-1.	First obtain an optoisolator as shown on <a href="https://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d">OpenBCI’s website</a>. If you will need more than one marker in your data, it would be better to follow a setup like <a href="https://drive.google.com/file/d/14VUn6qqwoz2uEIWMLOHF_wSsnXHoeotX/view">this one</a> and get a multichannel optoisolator.
+1.	First obtain an optoisolator as shown on <a href="https://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d" target="_blank">OpenBCI’s website</a>. If you will need more than one marker in your data, it would be better to follow a setup like <a href="https://drive.google.com/file/d/14VUn6qqwoz2uEIWMLOHF_wSsnXHoeotX/view">this one</a> and get a multichannel optoisolator.
 2.	Setup the optoisolator as shown below (taken from OpenBCI’s external triggering page):
 <br><a href="https://drive.google.com/uc?export=view&id=13AI0PjNmBja_kta2vWr4naFGDcOafNhF"><img src="https://drive.google.com/uc?export=view&id=13AI0PjNmBja_kta2vWr4naFGDcOafNhF" style="max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 3.	The overall setup should look like the following, where a parallel port is attached to a computer containing the paradigm/stimulation software. Plug in the dongle to your computer and then turn on the cyton board. Afterwards, connect the wires from the breadboard to the cyton.
