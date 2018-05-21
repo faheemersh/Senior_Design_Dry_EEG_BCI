@@ -33,7 +33,7 @@
 
 14. Now select all of the variables in the workspace, right click, and save as. Replace the original .mat file that had the extra row of data with this new .mat file containing the updated stims variable.
 
-15. If you're just analyzing one recording, load the file in (double click the .mat), run twobinary_OpenViBE_processing.m, and skip to step 20. If you're analyzing multiple recordings, you'll need to run twobinary_OpenViBE_processing.m for EACH of the .mat files you created. Start by running twobinary_OpenViBE_processing.m for the first .mat file. You will see a C and D variable stored in the workspace. C contains all the non-moving (baseline trials) taken from the data recorded between the onset of the arrows (so between the end of one trial and the onset of the arrow for the next trial). The first 20 trials of the D variable are left trials and the next 20 are right trials. 
+15. If you're just analyzing one recording, load the file in (double click the .mat), run twobinary_OpenViBE_processing.m, and skip to step 18. If you're analyzing multiple recordings, you'll need to run twobinary_OpenViBE_processing.m for EACH of the .mat files you created. Start by running twobinary_OpenViBE_processing.m for the first .mat file. You will see a C and D variable stored in the workspace. C contains all the non-moving (baseline trials) taken from the data recorded between the onset of the arrows (so between the end of one trial and the onset of the arrow for the next trial). The first 20 trials of the D variable are left trials and the next 20 are right trials. 
 
 16. You have two options. You can either save these C and D variables for this recording in another .mat file and keep repeating this process over and over again for the other recordings, making sure to stack the D matrices appropriately. Or you can create a script that does this for you. An example of such a script is shown below. It uses the file titled twobinary_OpenViBE_processing_fn.m (in this branch also) which is a function version of twobinary_OpenViBE_processing.m, so this function must be saved in the same directory as the script you create (in this branch too, titled openvibedataload.m). 
 <br><a href="https://drive.google.com/uc?export=view&id=1t0D4nkNqUyFa71s8XAjpLIYgcYSVUTuP"><img src="https://drive.google.com/uc?export=view&id=1t0D4nkNqUyFa71s8XAjpLIYgcYSVUTuP" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
@@ -43,9 +43,9 @@
 
 18. Next, run the twobinary_CSP_SVM_train.m file. You will see four plots. The first two are like those shown in step 2 of the [Analysis Wiki](https://github.com/faheemersh/Senior_Design_Dry_EEG_BCI/wiki/Analysis) page. The second two are plots of 3 features and you will need to click on the Rotate 3D button in the figure to see the plot properly. You can choose which features you would like to see by changing the values for f1, f2, and f3 in the appropriate sections, and then running just the section for the plot.
 
-19. The following variables provide important information about the training set. Note that the classifier architecture here is different from that in the online prediction part of the online code and this is shown below. The cross-validation code created here has been developed by our group, just like most of the code in this repository. For the case of 8-fold cross-validation on 40 trials (example), in short, this code segments the data into sets of 5, chooses 7 of those sets for training and 1 for testing in one pass of the loop. In the following passes, it picks a different 7 segments (doesn't repeat) for training and a different 1 segment for testing. In this way, each pass of the for loop results in a model that is created and has its own accuracy. The average accuracies of these models are calculated once the loop is finished. 
-* acctrainpred: this is the actual accuracy of the first classifier (movement/no movement)
-* acc1EE: this is the actual accuracy of the second classifier (left/right)
+19. The variables below provide important information about the training set. Note that the classifier architecture here is different from that in the online prediction part of the online code and this is shown below too. The cross-validation code created here has been developed by our group, just like most of the code in this repository. For the case of 8-fold cross-validation on 40 trials (example), in short, this code segments the data into sets of 5 trials, chooses 7 of those sets for training and 1 for testing in one pass of the loop. In the following passes, it picks a different 7 sets (doesn't repeat) for training and a different 1 set for testing. In this way, each pass of the for loop results in a new model that is created and has its own classification accuracy. The average accuracies of these models are calculated once the loop is finished. 
+* acctrainpred: this is the actual training accuracy of the first classifier (movement/no movement)
+* acc1EE: this is the actual training accuracy of the second classifier (left/right)
 * classLoss: this is the loss for the first classifier
 * classLosslr: this is the loss for the second classifier
 * avetrainAcc: this is the 10-fold cross-validation training accuracy for the first classifier
@@ -54,10 +54,19 @@
 * avetestAcclr: this is the 10-fold cross-validation testing accuracy for the second classifier
 <br><a href="https://drive.google.com/uc?export=view&id=1p6yBwzJIVCg1tHHeqoCOUR_QrEI_mz3Y"><img src="https://drive.google.com/uc?export=view&id=1p6yBwzJIVCg1tHHeqoCOUR_QrEI_mz3Y" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
 
-20. Now you will need to save some variables from this training session to use for the testing data and corresponding script. Using the Ctrl key, select the following variables:
+20. Now you will need to save some variables from this training session to use for the testing data and corresponding script. Using the Ctrl key, select the following variables, right click on one of them and save as a new .mat file:
 * ProjectionCSPlr
 * ProjectionCSPnm
 * SVMModellr
 * SVMModelnm
 * X_sv
 * XEE_sv
+
+21. Clear all variables in the workspace. Next, you need to load in the testing data, just as you did in step 15 (or steps 15-17 if you have multiple recordings for testing data). Once this is done, load in the .mat file you created in the previous step. Then run the script titled twobinary_CSP_SVM_test.m. 
+<br><a href="https://drive.google.com/uc?export=view&id=18cbyOPXDyx7P4-P1H976nl-za89RMHrD"><img src="https://drive.google.com/uc?export=view&id=18cbyOPXDyx7P4-P1H976nl-za89RMHrD" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a></br>
+
+22. You will see two plots here, similar to those found in step 3 of the [Analysis Wiki](https://github.com/faheemersh/Senior_Design_Dry_EEG_BCI/wiki/Analysis) page. Note that you may need to disable/re-enable the legend so that it displays the proper information. The important variables to look at here are: 
+* acc2testpred: this is the actual testing accuracy of the first classifier
+* acc2EE: this is the actual testing accuracy of the second classifier
+
+That's all for this guide!
