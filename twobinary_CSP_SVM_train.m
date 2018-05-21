@@ -212,8 +212,6 @@ end
 % creating labels/targets
 YEE(1:sizeEEXl(3),:)=0; %left trials
 YEE(sizeEEXl(3)+1:sizeEEXl(3)+sizeEEXr(3),:)=1; %right trials
-
-XEE(:,size(XEE,2)+1) = YEE;
 sizeXEE = size(XEE);
 
 % randomizing all the rows of X
@@ -345,6 +343,7 @@ acc1EE = numel(find(acc1EE == 0))/numel(YEE);
 %% SVM Plot N and M
 %rename the X variable to X_sv  and save variable for testing session!!!
 %note: these are plotted using true labels
+X_sv = X;
 try
 figure;
 f1=1; f2=2; %change these numbers to compare different features
@@ -368,6 +367,7 @@ end
 %% SVM Plot left and Right
 %rename the XEE variable to XEE_sv and save variable for testing session!!!
 %note: these are plotted using true labels
+XEE_sv=XEE;
 try
 figure;
 f1=1; f2=2; %change these numbers to compare different features
