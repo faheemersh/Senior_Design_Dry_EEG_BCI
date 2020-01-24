@@ -42,3 +42,5 @@ For synchronous BCIs, there may be a need to stream markers in real-time to anot
 * End session: 1010
 * Train: 33281
 * Experiment stop: 32770
+
+In addition, OpenViBE has a list of markers and their corresponding events on their <a href="http://openvibe.inria.fr/stimulation-codes/">website</a>.
